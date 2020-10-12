@@ -1,39 +1,10 @@
-import React from 'react';
-import {FiArrowRight} from 'react-icons/fi'
-import './styles/global.css'
-import './styles/pages/landing.css';
+import React from "react";
+import "./styles/global.css";
 
-import logoImg from './images/Logo.svg';
+import Routes from "./routes";
 
-
-function App(){
-  return (
-    <div id="page-landing">
-      <div className="content-wrapper">
-          <img src={logoImg} alt="Logo escrito Happy e Emoji cara sorrindo" />
-          
-          <main>
-            <h1>Leve felicidade para o mundo</h1>
-            <p>Visite orfanatos e mude o dia de muitas crianças</p>
-          </main>
-
-          <div className="location">
-            <strong>Natal</strong>
-            <span>Rio Grande do Norte</span>
-          </div>
-
-          <a href="/" className="enter-app"> 
-          <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" /> 
-          </a>
-
-
-
-        </div>
-
-    </div>
-    
-  );
+function App() {
+  return <Routes />;
 }
-
 
 export default App;
