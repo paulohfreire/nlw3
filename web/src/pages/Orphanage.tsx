@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 // import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
@@ -23,12 +24,24 @@ interface Orphanage {
     url: string;
   }>
 }
+=======
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiClock, FiInfo } from "react-icons/fi";
+import { Map, Marker, TileLayer } from "react-leaflet";
+//import { useHistory } from 'react-router-dom';
 
-interface OrphanageParams {
-  id: string;
-}
+
+import MapIcon from "../utils/mapIcon";
+import Sidebar from "../components/Sidebar";
+import '../styles/pages/orphanage.css';
+
+
+>>>>>>> parent of 251c11f... wip
+
 
 export default function Orphanage() {
+<<<<<<< HEAD
   const params = useParams<OrphanageParams>();
   const [orphanage, setOrphanage] = useState<Orphanage>();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -42,6 +55,9 @@ export default function Orphanage() {
   if (!orphanage) {
     return <p>Carregando...</p>
   }
+=======
+ 
+>>>>>>> parent of 251c11f... wip
 
   return (
     <div id="page-orphanage">
