@@ -5,8 +5,11 @@ import "leaflet/dist/leaflet.css";
 
 import Routes from "./routes";
 
-function App() {
-  return <Routes />;
+export default function App() {
+  return (
+    <div className="App">
+      <Routes />
+    </div>
+  );
 }
 
-export default App;

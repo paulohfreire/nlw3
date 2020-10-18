@@ -5,7 +5,7 @@ import Landing from "./pages/Landing";
 import Orphanage from "./pages/Orphanage";
 import OrphanagesMap from "./pages/OrphanagesMap";
 
-function Routes() {
+export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
@@ -17,4 +17,3 @@ function Routes() {
     </BrowserRouter>
   );
 }
-export default Routes;

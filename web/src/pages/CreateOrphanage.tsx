@@ -9,8 +9,7 @@ import Sidebar from "../components/Sidebar";
 import MapIcon from "../utils/mapIcon";
 import { useHistory } from "react-router-dom";
 import { LeafletMouseEvent } from "leaflet";
-import api from "../services/api";
-
+import api from '../services/api';
 
 export default function OrphanagesMap() {
   const history = useHistory();
